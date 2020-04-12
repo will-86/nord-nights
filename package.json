@@ -1,0 +1,31 @@
+{
+    "name": "nord-nights",
+    "author": {
+        "name": "Will T",
+        "url": "https://github.com/will-86"
+    },
+    "repository": {
+        "url": "https://github.com/will-86/nord-nights"
+    },
+    "homepage": "https://github.com/will-86/nord-nights",
+    "license": "MIT",
+    "publisher": "WillT",
+    "displayName": "Nord Nights",
+    "description": "Dark theme based on Nord, with an all black background and extra consideration for PowerShell syntax highlighting. Incorporates the Windows Terminal \"One Half Dark\" theme for the integrated terminal.",
+    "version": "1.0.0",
+    "engines": {
+        "vscode": "^1.44.0"
+    },
+    "categories": [
+        "Themes"
+    ],
+    "contributes": {
+        "themes": [
+            {
+                "label": "Nord Nights",
+                "uiTheme": "vs-dark",
+                "path": "./themes/Nord Nights-color-theme.json"
+            }
+        ]
+    }
+}
