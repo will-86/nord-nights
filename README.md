@@ -2,6 +2,8 @@
 
 Dark theme based on Nord, with an all black background and extra consideration for PowerShell syntax highlighting. Incorporates the Windows Terminal "One Half Dark" theme for the integrated terminal.
 
+Available on VS Code [Marketplace](https://marketplace.visualstudio.com/items?itemName=WillT.nord-nights)
+
 ## Installation
 
 To install this extension, download the _nord-nights.vsix_ file to your computer and then start VS code with the following command `code --install-extension nord-nights.vsix`
