@@ -8,7 +8,7 @@ parameters:
   - minor
   - major
 
-  name: NordNights_$(Date:yyyyMMdd)$(Rev:.r)
+name: NordNights_$(Date:yyyyMMdd)$(Rev:.r)
 
 resources:
   repositories:
