@@ -1,3 +1,5 @@
+name: NordNights_$(Date:yyyyMMdd)$(Rev:.r)
+
 parameters:
 - name: UpdateType
   type: string
@@ -7,15 +9,6 @@ parameters:
   - patch
   - minor
   - major
-
-name: NordNights_$(Date:yyyyMMdd)$(Rev:.r)
-
-resources:
-  repositories:
-    - repository: nordNights
-      type: github
-      name: will-86/nord-nights
-      endpoint: will-86
 
 trigger:
   branches:
