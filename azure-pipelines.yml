@@ -1,0 +1,10 @@
+name: Nord Nights
+
+trigger:
+- master
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+  - pwsh: Write-Host "Hello there!"
