@@ -15,6 +15,9 @@ trigger:
     include:
       - master
 
+variables:
+- group: VSCE_PAT
+
 pr:
   autoCancel: true
   branches:
