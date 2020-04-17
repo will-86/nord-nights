@@ -1,10 +1,36 @@
-name: Nord Nights
+parameters:
+- name: UpdateType
+  type: string
+  displayName: Update Type
+  default: patch
+  values:
+  - patch
+  - minor
+  - major
+
+  name: NordNights_$(Date:yyyyMMdd)$(Rev:.r)
+
+resources:
+  repositories:
+    - repository: nordNights
+      type: github
+      name: will-86/nord-nights
+      endpoint: will-86
 
 trigger:
-- master
+  branches:
+    include:
+      - master
 
-pool:
-  vmImage: 'ubuntu-latest'
+pr:
+  autoCancel: true
+  branches:
+    include:
+      - master
 
 steps:
-  - pwsh: Write-Host "Hello there!"
+  - pwsh: npm install vsce
+    displayName: Install VSCE
+
+  - pwsh: vsce publish -p $(VSCE_PAT) ${{ parameters.UpdateType }}
+    displayName: Publish extension
