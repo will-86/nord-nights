@@ -25,7 +25,7 @@ pr:
       - master
 
 steps:
-  - pwsh: npm install vsce
+  - pwsh: npm install -g vsce
     displayName: Install VSCE
 
   - pwsh: vsce publish -p $(VSCE_PAT) ${{ parameters.UpdateType }}
