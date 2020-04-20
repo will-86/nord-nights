@@ -12,7 +12,7 @@
     "publisher": "WillT",
     "displayName": "Nord Nights",
     "description": "Dark theme based on Nord, with an all black background and extra consideration for PowerShell syntax highlighting. Incorporates the Windows Terminal \"One Half Dark\" theme for the integrated terminal.",
-    "version": "1.1.0",
+    "version": "1.0.2",
     "engines": {
         "vscode": "^1.44.0"
     },
